@@ -1,0 +1,327 @@
+Generated: 2026-04-25T02:00:30
+Project root: C:\DL_PROJECT\xyz
+Dataset note: dataset folders are stored outside this project folder and should be configured in the notebook.
+Notebook: C:\DL_PROJECT\xyz\all_model_training_testing_optimization.ipynb
+
+==========================================================================================
+iNaturalist / CvT-13 Optimized Summary
+==========================================================================================
+Model: CvT-13
+Dataset: iNaturalist / iNatLoc500 flat
+Training command reference: python cvt/train_cvt13_inat.py --data-dir <INATLOC500_DATA_ROOT> --epochs 10 --batch-size 32 --use-fused-adamw --attention-backend sdpa --disable-compile
+Testing command reference: python cvt/test_cvt13_inat.py --data-dir <INATLOC500_DATA_ROOT> --checkpoint optimization_runs/inaturalist/cvt13_adamw_fused_sdpa/cvt13_optimized_best.pth
+Best validation top-1: 70.440%
+Test top-1: 87.600%
+Test top-5: 97.320%
+Total training time: 49:20
+
+==========================================================================================
+Full Optimized Metrics JSON
+==========================================================================================
+{
+  "best_val_top1": 0.7044,
+  "total_training_seconds": 2960.0114700999984,
+  "total_training_hms": "49:20",
+  "attention_backend_requested": "sdpa",
+  "attention_backends_resolved": {
+    "cvt.encoder.stages.0.layers.0.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.1.layers.0.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.1.layers.1.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.0.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.1.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.2.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.3.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.4.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.5.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.6.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.7.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.8.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.9.attention.attention": "cudnn_attention"
+  },
+  "compile_enabled": false,
+  "compile_backend_requested": "aot_eager",
+  "compile_backend_used": "disabled",
+  "amp_enabled": true,
+  "channels_last_enabled": true,
+  "fused_adamw_enabled": true,
+  "patched_attention_layers": 13,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 5.809463857269287,
+      "train_top1": 0.0454,
+      "train_top5": 0.12985,
+      "val_loss": 4.079221174621582,
+      "val_top1": 0.2368,
+      "val_top5": 0.6028,
+      "train_seconds": 423.4923101999884,
+      "val_seconds": 148.46455920000153,
+      "peak_vram_gb": 2.244022846221924,
+      "train_images_per_sec": 47.22635929458855
+    },
+    {
+      "epoch": 2,
+      "train_loss": 4.433088523101807,
+      "train_top1": 0.1647,
+      "train_top5": 0.3622,
+      "val_loss": 2.832589658355713,
+      "val_top1": 0.442,
+      "val_top5": 0.8012,
+      "train_seconds": 251.64275080000516,
+      "val_seconds": 12.244445899996208,
+      "peak_vram_gb": 2.0867433547973633,
+      "train_images_per_sec": 79.47775144095107
+    },
+    {
+      "epoch": 3,
+      "train_loss": 3.9123271991729736,
+      "train_top1": 0.2597,
+      "train_top5": 0.46075,
+      "val_loss": 2.486652571105957,
+      "val_top1": 0.52,
+      "val_top5": 0.8508,
+      "train_seconds": 251.96465029999672,
+      "val_seconds": 12.258926300011808,
+      "peak_vram_gb": 2.0862855911254883,
+      "train_images_per_sec": 79.37621398949176
+    },
+    {
+      "epoch": 4,
+      "train_loss": 3.668663344955444,
+      "train_top1": 0.29975,
+      "train_top5": 0.48065,
+      "val_loss": 2.26219624710083,
+      "val_top1": 0.5872,
+      "val_top5": 0.8784,
+      "train_seconds": 252.47270919999573,
+      "val_seconds": 12.25808899999538,
+      "peak_vram_gb": 2.0862855911254883,
+      "train_images_per_sec": 79.2164826977677
+    },
+    {
+      "epoch": 5,
+      "train_loss": 3.490801169204712,
+      "train_top1": 0.34445,
+      "train_top5": 0.51285,
+      "val_loss": 2.1405999645233154,
+      "val_top1": 0.622,
+      "val_top5": 0.8888,
+      "train_seconds": 253.91563479999604,
+      "val_seconds": 12.180540899993503,
+      "peak_vram_gb": 2.0862855911254883,
+      "train_images_per_sec": 78.766319434223
+    },
+    {
+      "epoch": 6,
+      "train_loss": 3.3431873304367064,
+      "train_top1": 0.3852,
+      "train_top5": 0.5428,
+      "val_loss": 2.0971876609802247,
+      "val_top1": 0.6372,
+      "val_top5": 0.904,
+      "train_seconds": 252.0557567000069,
+      "val_seconds": 11.953027600000496,
+      "peak_vram_gb": 2.0862855911254883,
+      "train_images_per_sec": 79.34752319029043
+    },
+    {
+      "epoch": 7,
+      "train_loss": 3.2253555818557738,
+      "train_top1": 0.40585,
+      "train_top5": 0.5383,
+      "val_loss": 2.009835824203491,
+      "val_top1": 0.6724,
+      "val_top5": 0.91,
+      "train_seconds": 261.00768080000125,
+      "val_seconds": 12.161190400001942,
+      "peak_vram_gb": 2.0862855911254883,
+      "train_images_per_sec": 76.62609751061358
+    },
+    {
+      "epoch": 8,
+      "train_loss": 3.076145298576355,
+      "train_top1": 0.45395,
+      "train_top5": 0.5755,
+      "val_loss": 1.974563848876953,
+      "val_top1": 0.6924,
+      "val_top5": 0.9172,
+      "train_seconds": 250.04535109999415,
+      "val_seconds": 12.175237599993125,
+      "peak_vram_gb": 2.0862855911254883,
+      "train_images_per_sec": 79.9854902801289
+    },
+    {
+      "epoch": 9,
+      "train_loss": 3.0776277671813963,
+      "train_top1": 0.46345,
+      "train_top5": 0.58935,
+      "val_loss": 1.956700053024292,
+      "val_top1": 0.7044,
+      "val_top5": 0.9208,
+      "train_seconds": 249.56251350000093,
+      "val_seconds": 12.132751099998131,
+      "peak_vram_gb": 2.0862855911254883,
+      "train_images_per_sec": 80.14024109434177
+    },
+    {
+      "epoch": 10,
+      "train_loss": 3.0622178983688353,
+      "train_top1": 0.4603,
+      "train_top5": 0.5763,
+      "val_loss": 1.9739395029067994,
+      "val_top1": 0.7,
+      "val_top5": 0.9216,
+      "train_seconds": 253.93687849999696,
+      "val_seconds": 12.110900600004243,
+      "peak_vram_gb": 2.0862855911254883,
+      "train_images_per_sec": 78.75973004842713
+    }
+  ],
+  "checkpoint_path": "C:\\DL_PROJECT\\xyz\\optimization_runs\\inaturalist\\cvt13_adamw_fused_sdpa\\cvt13_optimized_best.pth"
+}
+==========================================================================================
+Full Optimized Test JSON
+==========================================================================================
+{
+  "test_loss": 0.7186351806640625,
+  "test_top1": 0.876,
+  "test_top5": 0.9732,
+  "test_seconds": 149.22061000000394,
+  "test_hms": "02:29",
+  "images_per_sec": 16.75371786779275,
+  "compile_enabled": false,
+  "compile_backend_requested": "aot_eager",
+  "compile_backend_used": "disabled",
+  "amp_enabled": true,
+  "channels_last_enabled": true,
+  "attention_backend_requested": "sdpa",
+  "attention_backends_resolved": {
+    "cvt.encoder.stages.0.layers.0.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.1.layers.0.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.1.layers.1.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.0.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.1.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.2.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.3.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.4.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.5.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.6.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.7.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.8.attention.attention": "cudnn_attention",
+    "cvt.encoder.stages.2.layers.9.attention.attention": "cudnn_attention"
+  },
+  "patched_attention_layers": 13,
+  "checkpoint_path": "C:\\DL_PROJECT\\xyz\\optimization_runs\\inaturalist\\cvt13_adamw_fused_sdpa\\cvt13_optimized_best.pth"
+}
+==========================================================================================
+Raw Train Log
+==========================================================================================
+
+--- C:\DL_PROJECT\xyz\optimization_runs\inaturalist\cvt13_adamw_fused_sdpa\train.log ---
+Dataset root: C:\DL_PROJECT\xyz\dataset\inatloc500_flat
+Train samples: 20000
+Validation samples: 2500
+Classes: 500
+Using device: cuda
+torch.compile enabled: False
+torch.compile backend used: disabled
+Fused AdamW enabled: True
+Requested attention backend: sdpa
+Patched attention layers: 13
+Epoch 1: train_top1=0.0454 val_top1=0.2368 val_top5=0.6028 time=07:03 peak_vram_gb=2.24
+Saved best checkpoint to C:\DL_PROJECT\xyz\optimization_runs\inaturalist\cvt13_adamw_fused_sdpa\cvt13_optimized_best.pth
+Epoch 2: train_top1=0.1647 val_top1=0.4420 val_top5=0.8012 time=04:12 peak_vram_gb=2.09
+Saved best checkpoint to C:\DL_PROJECT\xyz\optimization_runs\inaturalist\cvt13_adamw_fused_sdpa\cvt13_optimized_best.pth
+Epoch 3: train_top1=0.2597 val_top1=0.5200 val_top5=0.8508 time=04:12 peak_vram_gb=2.09
+Saved best checkpoint to C:\DL_PROJECT\xyz\optimization_runs\inaturalist\cvt13_adamw_fused_sdpa\cvt13_optimized_best.pth
+Epoch 4: train_top1=0.2998 val_top1=0.5872 val_top5=0.8784 time=04:12 peak_vram_gb=2.09
+Saved best checkpoint to C:\DL_PROJECT\xyz\optimization_runs\inaturalist\cvt13_adamw_fused_sdpa\cvt13_optimized_best.pth
+Epoch 5: train_top1=0.3444 val_top1=0.6220 val_top5=0.8888 time=04:14 peak_vram_gb=2.09
+Saved best checkpoint to C:\DL_PROJECT\xyz\optimization_runs\inaturalist\cvt13_adamw_fused_sdpa\cvt13_optimized_best.pth
+Epoch 6: train_top1=0.3852 val_top1=0.6372 val_top5=0.9040 time=04:12 peak_vram_gb=2.09
+Saved best checkpoint to C:\DL_PROJECT\xyz\optimization_runs\inaturalist\cvt13_adamw_fused_sdpa\cvt13_optimized_best.pth
+Epoch 7: train_top1=0.4058 val_top1=0.6724 val_top5=0.9100 time=04:21 peak_vram_gb=2.09
+Saved best checkpoint to C:\DL_PROJECT\xyz\optimization_runs\inaturalist\cvt13_adamw_fused_sdpa\cvt13_optimized_best.pth
+Epoch 8: train_top1=0.4540 val_top1=0.6924 val_top5=0.9172 time=04:10 peak_vram_gb=2.09
+Saved best checkpoint to C:\DL_PROJECT\xyz\optimization_runs\inaturalist\cvt13_adamw_fused_sdpa\cvt13_optimized_best.pth
+Epoch 9: train_top1=0.4634 val_top1=0.7044 val_top5=0.9208 time=04:10 peak_vram_gb=2.09
+Saved best checkpoint to C:\DL_PROJECT\xyz\optimization_runs\inaturalist\cvt13_adamw_fused_sdpa\cvt13_optimized_best.pth
+Epoch 10: train_top1=0.4603 val_top1=0.7000 val_top5=0.9216 time=04:14 peak_vram_gb=2.09
+Training complete in 49:20
+Metrics saved to C:\DL_PROJECT\xyz\optimization_runs\inaturalist\cvt13_adamw_fused_sdpa\cvt13_optimized_metrics.json
+
+
+==========================================================================================
+Raw Train Error Log
+==========================================================================================
+
+--- C:\DL_PROJECT\xyz\optimization_runs\inaturalist\cvt13_adamw_fused_sdpa\train.err.log ---
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] You passed `num_labels=500` which is incompatible to the `id2label` map of length `1000`.
+
+Loading weights:   0%|          | 0/459 [00:00<?, ?it/s]
+Loading weights:  71%|#######1  | 327/459 [00:00<00:00, 3252.62it/s]
+Loading weights: 100%|##########| 459/459 [00:00<00:00, 3170.82it/s]
+[transformers] [1mCvtForImageClassification LOAD REPORT[0m from: microsoft/cvt-13
+Key               | Status   |                                                                                            
+------------------+----------+--------------------------------------------------------------------------------------------
+classifier.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([1000]) vs model:torch.Size([500])          
+classifier.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([1000, 384]) vs model:torch.Size([500, 384])
+
+Notes:
+- MISMATCH:	ckpt weights were loaded, but they did not match the original empty weight shapes.
+C:\DL_PROJECT\xyz\cvt\cvt_runtime.py:118: UserWarning: Memory efficient kernel not used because: (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:986.)
+  output = F.scaled_dot_product_attention(
+C:\DL_PROJECT\xyz\cvt\cvt_runtime.py:118: UserWarning: Memory Efficient attention has been runtime disabled. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen/native/transformers/sdp_utils_cpp.h:552.)
+  output = F.scaled_dot_product_attention(
+C:\DL_PROJECT\xyz\cvt\cvt_runtime.py:118: UserWarning: Flash attention kernel not used because: (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:988.)
+  output = F.scaled_dot_product_attention(
+C:\DL_PROJECT\xyz\cvt\cvt_runtime.py:118: UserWarning: Torch was not compiled with flash attention. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:797.)
+  output = F.scaled_dot_product_attention(
+C:\DL_PROJECT\xyz\cvt\cvt_runtime.py:118: UserWarning: cuDNN attention kernel not used because: (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:990.)
+  output = F.scaled_dot_product_attention(
+C:\DL_PROJECT\xyz\cvt\cvt_runtime.py:118: UserWarning: cuDNN attention has been runtime disabled. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:706.)
+  output = F.scaled_dot_product_attention(
+
+
+==========================================================================================
+Raw Test Log
+==========================================================================================
+
+--- C:\DL_PROJECT\xyz\optimization_runs\inaturalist\cvt13_adamw_fused_sdpa\test.log ---
+Test top1: 0.8760
+Test top5: 0.9732
+Metrics saved to: C:\DL_PROJECT\xyz\optimization_runs\inaturalist\cvt13_adamw_fused_sdpa\cvt13_optimized_test_metrics.json
+
+
+==========================================================================================
+Raw Test Error Log
+==========================================================================================
+
+--- C:\DL_PROJECT\xyz\optimization_runs\inaturalist\cvt13_adamw_fused_sdpa\test.err.log ---
+[transformers] You passed `num_labels=500` which is incompatible to the `id2label` map of length `1000`.
+
+Loading weights:   0%|          | 0/459 [00:00<?, ?it/s]
+Loading weights:  65%|######5   | 299/459 [00:00<00:00, 2980.96it/s]
+Loading weights: 100%|##########| 459/459 [00:00<00:00, 2900.16it/s]
+[transformers] [1mCvtForImageClassification LOAD REPORT[0m from: microsoft/cvt-13
+Key               | Status   |                                                                                            
+------------------+----------+--------------------------------------------------------------------------------------------
+classifier.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([1000]) vs model:torch.Size([500])          
+classifier.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([1000, 384]) vs model:torch.Size([500, 384])
+
+Notes:
+- MISMATCH:	ckpt weights were loaded, but they did not match the original empty weight shapes.
+C:\DL_PROJECT\xyz\cvt\cvt_runtime.py:118: UserWarning: Memory efficient kernel not used because: (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:986.)
+  output = F.scaled_dot_product_attention(
+C:\DL_PROJECT\xyz\cvt\cvt_runtime.py:118: UserWarning: Memory Efficient attention has been runtime disabled. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen/native/transformers/sdp_utils_cpp.h:552.)
+  output = F.scaled_dot_product_attention(
+C:\DL_PROJECT\xyz\cvt\cvt_runtime.py:118: UserWarning: Flash attention kernel not used because: (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:988.)
+  output = F.scaled_dot_product_attention(
+C:\DL_PROJECT\xyz\cvt\cvt_runtime.py:118: UserWarning: Torch was not compiled with flash attention. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:797.)
+  output = F.scaled_dot_product_attention(
+C:\DL_PROJECT\xyz\cvt\cvt_runtime.py:118: UserWarning: cuDNN attention kernel not used because: (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:990.)
+  output = F.scaled_dot_product_attention(
+C:\DL_PROJECT\xyz\cvt\cvt_runtime.py:118: UserWarning: cuDNN attention has been runtime disabled. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:706.)
+  output = F.scaled_dot_product_attention(
+

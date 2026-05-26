@@ -1,0 +1,133 @@
+{
+  "best_val_acc": 0.8543894389438944,
+  "baseline_val_acc": 0.8339,
+  "delta_vs_baseline": 0.020489438943894434,
+  "total_training_seconds": 3181.6727866,
+  "total_training_hms": "53:02",
+  "avg_epoch_seconds": 302.27141257999904,
+  "avg_epoch_hms": "05:02",
+  "avg_train_images_per_sec": 227.14311542771242,
+  "steady_train_images_per_sec": 232.81343634077737,
+  "throughput_warmup_epochs": 1,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 3.6562009624933034,
+      "train_approx_acc": 0.23103777044371104,
+      "val_loss": 1.8738182330682334,
+      "val_acc": 0.6780198019801981,
+      "train_seconds": 387.11550759999955,
+      "eval_seconds": 49.387128900008975,
+      "peak_vram_gb": 4.906781196594238,
+      "train_images_per_sec": 176.11022721012813
+    },
+    {
+      "epoch": 2,
+      "train_loss": 2.776564456029038,
+      "train_approx_acc": 0.37766043270993765,
+      "val_loss": 1.612765149409228,
+      "val_acc": 0.7432343234323432,
+      "train_seconds": 291.0872066999873,
+      "eval_seconds": 11.80882869999914,
+      "peak_vram_gb": 4.944201946258545,
+      "train_images_per_sec": 234.20816315801
+    },
+    {
+      "epoch": 3,
+      "train_loss": 2.605746067922807,
+      "train_approx_acc": 0.41462412907957463,
+      "val_loss": 1.4971284677801353,
+      "val_acc": 0.7803300330033003,
+      "train_seconds": 290.0588710000011,
+      "eval_seconds": 11.75906360000954,
+      "peak_vram_gb": 4.9082722663879395,
+      "train_images_per_sec": 235.03849327193907
+    },
+    {
+      "epoch": 4,
+      "train_loss": 2.5078776786036223,
+      "train_approx_acc": 0.44566189952328567,
+      "val_loss": 1.4522755034449863,
+      "val_acc": 0.8009240924092409,
+      "train_seconds": 290.26511069999833,
+      "eval_seconds": 11.696674799997709,
+      "peak_vram_gb": 4.9082722663879395,
+      "train_images_per_sec": 234.87149328967007
+    },
+    {
+      "epoch": 5,
+      "train_loss": 2.4134426532790125,
+      "train_approx_acc": 0.45755775577557756,
+      "val_loss": 1.356428197791474,
+      "val_acc": 0.8249504950495049,
+      "train_seconds": 294.9495193000039,
+      "eval_seconds": 12.971544899992296,
+      "peak_vram_gb": 4.9082722663879395,
+      "train_images_per_sec": 231.1412480406748
+    },
+    {
+      "epoch": 6,
+      "train_loss": 2.330640492923626,
+      "train_approx_acc": 0.4798239823982398,
+      "val_loss": 1.3237361291375491,
+      "val_acc": 0.8336633663366336,
+      "train_seconds": 294.2621196000109,
+      "eval_seconds": 11.945191199993133,
+      "peak_vram_gb": 4.9082722663879395,
+      "train_images_per_sec": 231.68119665782993
+    },
+    {
+      "epoch": 7,
+      "train_loss": 2.279209219062114,
+      "train_approx_acc": 0.5015034836817015,
+      "val_loss": 1.3007399738425076,
+      "val_acc": 0.8443564356435643,
+      "train_seconds": 295.6375394999923,
+      "eval_seconds": 13.042870200006291,
+      "peak_vram_gb": 4.9082722663879395,
+      "train_images_per_sec": 230.60332634111163
+    },
+    {
+      "epoch": 8,
+      "train_loss": 2.2217127091953683,
+      "train_approx_acc": 0.501987532086542,
+      "val_loss": 1.2758921347828982,
+      "val_acc": 0.8488448844884489,
+      "train_seconds": 294.3644778000016,
+      "eval_seconds": 11.829363299999386,
+      "peak_vram_gb": 4.9082722663879395,
+      "train_images_per_sec": 231.6006350682019
+    },
+    {
+      "epoch": 9,
+      "train_loss": 2.198453329972483,
+      "train_approx_acc": 0.5018115144847818,
+      "val_loss": 1.2640028777138235,
+      "val_acc": 0.8543894389438944,
+      "train_seconds": 291.94067120000545,
+      "eval_seconds": 11.805358900004649,
+      "peak_vram_gb": 4.9082722663879395,
+      "train_images_per_sec": 233.5234748888209
+    },
+    {
+      "epoch": 10,
+      "train_loss": 2.1675641999875928,
+      "train_approx_acc": 0.5211441144114412,
+      "val_loss": 1.2678981231462838,
+      "val_acc": 0.8538613861386138,
+      "train_seconds": 293.03310239998973,
+      "eval_seconds": 11.758645999987493,
+      "peak_vram_gb": 4.9082722663879395,
+      "train_images_per_sec": 232.652896350738
+    }
+  ],
+  "attention_backend_requested": "eager",
+  "attention_backends_resolved": {},
+  "compile_enabled": true,
+  "compile_backend_requested": "aot_eager",
+  "compile_backend_used": "aot_eager",
+  "amp_enabled": true,
+  "channels_last_enabled": true,
+  "patched_attention_layers": 0,
+  "checkpoint_path": "C:\\DSAI\\4th_sem\\DL\\DL_project\\checkpoints\\cvt13_compile_bs64_best.pth"
+}

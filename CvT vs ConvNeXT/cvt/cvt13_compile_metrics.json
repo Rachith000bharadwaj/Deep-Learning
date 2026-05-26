@@ -1,0 +1,130 @@
+{
+  "best_val_acc": 0.8563696369636964,
+  "baseline_val_acc": 0.8339,
+  "delta_vs_baseline": 0.022469636963696415,
+  "total_training_seconds": 8350.7734739,
+  "total_training_hms": "02:19:11",
+  "avg_epoch_seconds": 789.4978571200002,
+  "avg_epoch_hms": "13:09",
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 3.5556507402992876,
+      "train_approx_acc": 0.24167216721672166,
+      "val_loss": 1.867008779985283,
+      "val_acc": 0.6657425742574258,
+      "train_seconds": 918.9620259999938,
+      "eval_seconds": 72.04697659998783,
+      "peak_vram_gb": 2.61830472946167,
+      "train_images_per_sec": 74.1869610181264
+    },
+    {
+      "epoch": 2,
+      "train_loss": 2.819662226417102,
+      "train_approx_acc": 0.3748734873487349,
+      "val_loss": 1.6307993913719756,
+      "val_acc": 0.7415181518151815,
+      "train_seconds": 846.2529361000052,
+      "eval_seconds": 47.05638429999817,
+      "peak_vram_gb": 2.61818790435791,
+      "train_images_per_sec": 80.56102034243753
+    },
+    {
+      "epoch": 3,
+      "train_loss": 2.6607606616717887,
+      "train_approx_acc": 0.4036963696369637,
+      "val_loss": 1.5451550238203293,
+      "val_acc": 0.7676567656765677,
+      "train_seconds": 775.5687309000059,
+      "eval_seconds": 44.03445640001155,
+      "peak_vram_gb": 2.61818790435791,
+      "train_images_per_sec": 87.90323447012436
+    },
+    {
+      "epoch": 4,
+      "train_loss": 2.5275338982504105,
+      "train_approx_acc": 0.4332086541987532,
+      "val_loss": 1.4522355517145038,
+      "val_acc": 0.7891749174917492,
+      "train_seconds": 867.9369821,
+      "eval_seconds": 44.529031800004304,
+      "peak_vram_gb": 2.61818790435791,
+      "train_images_per_sec": 78.5483294363705
+    },
+    {
+      "epoch": 5,
+      "train_loss": 2.441605654563666,
+      "train_approx_acc": 0.4538027136046938,
+      "val_loss": 1.3952281369155783,
+      "val_acc": 0.81003300330033,
+      "train_seconds": 744.1595911999902,
+      "eval_seconds": 38.52857799999765,
+      "peak_vram_gb": 2.61818790435791,
+      "train_images_per_sec": 91.6134130449959
+    },
+    {
+      "epoch": 6,
+      "train_loss": 2.376328716274579,
+      "train_approx_acc": 0.4755262192885955,
+      "val_loss": 1.333018306190818,
+      "val_acc": 0.8291749174917492,
+      "train_seconds": 704.6016709999967,
+      "eval_seconds": 39.19015070000023,
+      "peak_vram_gb": 2.61818790435791,
+      "train_images_per_sec": 96.75679579817562
+    },
+    {
+      "epoch": 7,
+      "train_loss": 2.3002758427386674,
+      "train_approx_acc": 0.4902970297029703,
+      "val_loss": 1.3012835001552066,
+      "val_acc": 0.8427722772277227,
+      "train_seconds": 703.2032354999974,
+      "eval_seconds": 41.82822809999925,
+      "peak_vram_gb": 2.61818790435791,
+      "train_images_per_sec": 96.94921262915642
+    },
+    {
+      "epoch": 8,
+      "train_loss": 2.232232162246872,
+      "train_approx_acc": 0.5028382838283828,
+      "val_loss": 1.2873619893832569,
+      "val_acc": 0.8475247524752475,
+      "train_seconds": 705.3816882000101,
+      "eval_seconds": 40.27730669999437,
+      "peak_vram_gb": 2.61818790435791,
+      "train_images_per_sec": 96.64980129264295
+    },
+    {
+      "epoch": 9,
+      "train_loss": 2.1831762800646826,
+      "train_approx_acc": 0.5155995599559956,
+      "val_loss": 1.2640218814528814,
+      "val_acc": 0.8545214521452145,
+      "train_seconds": 833.295984299999,
+      "eval_seconds": 47.53960930000176,
+      "peak_vram_gb": 2.61818790435791,
+      "train_images_per_sec": 81.81366679364194
+    },
+    {
+      "epoch": 10,
+      "train_loss": 2.1757823906007774,
+      "train_approx_acc": 0.5211881188118812,
+      "val_loss": 1.2677976341530828,
+      "val_acc": 0.8563696369636964,
+      "train_seconds": 795.6157259000029,
+      "eval_seconds": 39.414643600001,
+      "peak_vram_gb": 2.61818790435791,
+      "train_images_per_sec": 85.68835152532994
+    }
+  ],
+  "attention_backend_requested": "eager",
+  "attention_backends_resolved": {},
+  "compile_enabled": true,
+  "compile_backend_requested": "aot_eager",
+  "compile_backend_used": "aot_eager",
+  "amp_enabled": true,
+  "channels_last_enabled": true,
+  "patched_attention_layers": 0,
+  "checkpoint_path": "C:\\DSAI\\4th_sem\\DL\\DL_project\\checkpoints\\cvt13_compile_best.pth"
+}

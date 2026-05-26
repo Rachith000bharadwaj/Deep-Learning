@@ -1,0 +1,21 @@
+{
+  "tensor_root": "C:\\DSAI\\4th_sem\\DL\\DL_project\\dl_project\\outputs\\food101_uint8_tensors",
+  "output_dir": "C:\\DSAI\\4th_sem\\DL\\DL_project\\dl_project\\outputs\\convnextv2_tiny_food101_tensor_10epoch_b16_fused_compile_ro_nocg_5shards",
+  "model_name": "convnextv2_tiny",
+  "epochs": 10,
+  "batch_size": 16,
+  "accum_steps": 1,
+  "lr": 0.0001,
+  "device": "cuda",
+  "train_samples": 75750,
+  "val_samples": 25250,
+  "best_val_top1": 0.4986138613861386,
+  "final_val_top1": 0.4986138613861386,
+  "final_val_top5": 0.7644752475247525,
+  "training_minutes": 120.9438352416666,
+  "shards_per_load": 5,
+  "use_fused_adamw": true,
+  "use_torch_compile": true,
+  "compile_mode": "reduce-overhead-no-cudagraphs",
+  "compile_backend": "inductor"
+}

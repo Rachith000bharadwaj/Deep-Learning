@@ -1,0 +1,30 @@
+{
+  "test_loss": 0.5266026798640148,
+  "test_acc": 0.8962376237623763,
+  "test_seconds": 88.6318062000064,
+  "test_hms": "01:29",
+  "images_per_sec": 284.88644294375416,
+  "compile_enabled": true,
+  "compile_backend_requested": "aot_eager",
+  "compile_backend_used": "aot_eager",
+  "amp_enabled": true,
+  "channels_last_enabled": true,
+  "attention_backend_requested": "math",
+  "attention_backends_resolved": {
+    "cvt.encoder.stages.0.layers.0.attention.attention": "math",
+    "cvt.encoder.stages.1.layers.0.attention.attention": "math",
+    "cvt.encoder.stages.1.layers.1.attention.attention": "math",
+    "cvt.encoder.stages.2.layers.0.attention.attention": "math",
+    "cvt.encoder.stages.2.layers.1.attention.attention": "math",
+    "cvt.encoder.stages.2.layers.2.attention.attention": "math",
+    "cvt.encoder.stages.2.layers.3.attention.attention": "math",
+    "cvt.encoder.stages.2.layers.4.attention.attention": "math",
+    "cvt.encoder.stages.2.layers.5.attention.attention": "math",
+    "cvt.encoder.stages.2.layers.6.attention.attention": "math",
+    "cvt.encoder.stages.2.layers.7.attention.attention": "math",
+    "cvt.encoder.stages.2.layers.8.attention.attention": "math",
+    "cvt.encoder.stages.2.layers.9.attention.attention": "math"
+  },
+  "patched_attention_layers": 13,
+  "checkpoint_path": "C:\\DSAI\\4th_sem\\DL\\DL_project\\checkpoints\\cvt13_compile_sdpa_math_bs64_best.pth"
+}

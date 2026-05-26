@@ -1,0 +1,25 @@
+image,split,label_id,class_name
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\test__0574__768f0da4ddd6e9fdeefefa113ab3afef.jpg,train,574,Dermasterias imbricata
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\test__0816__5ba10de4a0b99c662809874bd5b30a25.jpg,train,816,Bison bison
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\val__0700__9292dbfc05b248eddaefe2ada3cdc6dd.jpg,train,700,Callipepla squamata
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\val__0891__8dba073bf3c253671e58155501a97cdd.jpg,train,891,Triopha catalinae
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\test__0579__acdab620c870fdb0b0ce2c16db1c02b8.jpg,train,579,Limulus polyphemus
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\test__0964__4cfb930ba9a1ba0c38a3b37ad4fcc184.jpg,train,964,Rena dulcis
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\val__0816__2592964f07f62c5e0fe4fe7074869d56.jpg,train,816,Bison bison
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\val__0725__94a954f1ad8bd9ccbc6d955d1af57553.jpg,train,725,Bombus bimaculatus
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\val__0525__40dfd8647047a1f652011932e6836083.jpg,val,525,Dicamptodon ensatus
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\test__0864__59b27af2e3fdc6496e89d8b37de278c6.jpg,val,864,Tamiasciurus douglasii
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\val__0957__02c890de3d3c0cf064b6d92b54057c5a.jpg,val,957,Pituophis catenifer
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\val__0881__09b9441f28bfa404ccd62325a90c2209.jpg,val,881,Doris montereyensis
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\val__0587__0e5ba9229cfd8ad3ee5e4d24c7ebb791.jpg,val,587,Strongylocentrotus purpuratus
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\test__0705__04df1930a93a9cb40785ae2718b040ed.jpg,val,705,Caracara cheriway
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\test__0629__d782a43bc1bf0b305026a19ae3aa6756.jpg,val,629,Amazilia yucatanensis
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\val__0951__0728c1eab1cb44bfeb57421b43e54514.jpg,val,951,Phelsuma laticauda
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\val__0878__0eda31c80fc61492aafb5915426683aa.jpg,test,878,Cornu aspersum
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\val__0650__274ae0602cb54e4aa4682ac12f0cf208.jpg,test,650,Ardenna creatopus
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\val__0956__09f28fd4672de0ab8182ab5c9bb5b097.jpg,test,956,Phrynosoma platyrhinos
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\test__0507__3a51781d8b9999fff4b5c5399e1e3613.jpg,test,507,Acris blanchardi
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\test__0602__2137740a9c406ff9ea4043152e817e3f.jpg,test,602,Latrodectus mactans
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\test__0707__1a317e16803961096b7969ad5a011522.jpg,test,707,Cardinalis cardinalis
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\test__0946__3bc95c7875fc27b8b818a1a5c3215a88.jpg,test,946,Opheodrys aestivus
+C:\DL_PROJECT\xyz\dataset\inatloc500_flat\images\test__0675__0f2af2c540284126d8b98d6b3aff8a28.jpg,test,675,Bubulcus ibis

@@ -1,0 +1,16 @@
+{
+  "test_loss": 0.5307248015521776,
+  "test_acc": 0.8932277227722772,
+  "test_seconds": 75.43062629998894,
+  "test_hms": "01:15",
+  "images_per_sec": 334.74466855916455,
+  "compile_enabled": true,
+  "compile_backend_requested": "aot_eager",
+  "compile_backend_used": "aot_eager",
+  "amp_enabled": true,
+  "channels_last_enabled": true,
+  "attention_backend_requested": "eager",
+  "attention_backends_resolved": {},
+  "patched_attention_layers": 0,
+  "checkpoint_path": "C:\\DSAI\\4th_sem\\DL\\DL_project\\checkpoints\\cvt13_compile_bs64_best.pth"
+}

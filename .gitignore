@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local datasets and caches
+data/
+datasets/
+.cache/
+
+# Build/output folders
+runs/
+wandb/
+logs/
+
+# Model checkpoints that exceed GitHub's normal 100 MB file limit
+CvT vs ConvNeXT/convnext/*.pt
+CvT vs ConvNeXT/convnext/*.pth
+CvT vs ConvNeXT/convnext/convnextv2_tiny_food101_10epoch_b16/*.pth
+CvT vs ConvNeXT/convnext/smoke_outputs/*.pth
+CvT vs ConvNeXT/convnext/smoke_outputs_2/*.pth
+
+.DS_Store
+Thumbs.db

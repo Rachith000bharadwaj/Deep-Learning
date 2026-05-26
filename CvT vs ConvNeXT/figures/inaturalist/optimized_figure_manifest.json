@@ -1,0 +1,19 @@
+{
+  "created_pngs": [
+    "optimized_cvt13_accuracy.png",
+    "optimized_convnextv2_tiny_accuracy.png",
+    "optimized_validation_accuracy_comparison.png",
+    "optimized_training_loss_comparison.png",
+    "optimized_test_accuracy_comparison.png",
+    "optimized_runtime_comparison.png",
+    "optimized_fit_check.png",
+    "optimized_inaturalist_model_summary.png"
+  ],
+  "source_files": {
+    "cvt_training": "C:\\DL_PROJECT\\xyz\\optimization_runs\\inaturalist\\cvt13_adamw_fused_sdpa\\cvt13_optimized_metrics.json",
+    "cvt_test": "C:\\DL_PROJECT\\xyz\\optimization_runs\\inaturalist\\cvt13_adamw_fused_sdpa\\cvt13_optimized_test_metrics.json",
+    "convnext_training": "C:\\DL_PROJECT\\xyz\\optimization_runs\\inaturalist\\convnextv2_tiny_adamw_fused_in22k\\history.csv",
+    "convnext_summary": "C:\\DL_PROJECT\\xyz\\optimization_runs\\inaturalist\\convnextv2_tiny_adamw_fused_in22k\\summary.json",
+    "convnext_test": "C:\\DL_PROJECT\\xyz\\optimization_runs\\inaturalist\\convnextv2_tiny_adamw_fused_in22k\\test_metrics.json"
+  }
+}
